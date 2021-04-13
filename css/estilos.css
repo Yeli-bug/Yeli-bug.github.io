@@ -1,0 +1,280 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0; /*LE QUITAMOS EL MARGEN POR DEFECTO QUE TIENE PARA QUE SE VEA MEJOR EL BACKGROAD DE LA CABECERA*/
+}
+.logoContainer {
+    margin-top:0; /*LE QUITAMOS EL MARGEN  TOP POR DEFECTO PARA QUE SE VEA MEJOR EL BACKGROAD DE LA CABECERA*/
+    margin-bottom: 0;
+}
+.header-logoContainer {
+    /*LOS ELEMENTOS SE PUEDES CENTRAR CON QUE TENGAN:display:
+    UN ANCHO FIJO (WIDTH)
+    UN DISPLAY BLOCK
+    Y UN MARGEN 0 AUTO */
+    display: block;
+    margin: 0 auto; /*Parte anaranjada (TOP RIGHT BOTTOM LEFT)vease en modelo de caja (LE QUITE EL MARGEN PARA QUE EL HEADER NO TUVIESE ESPACIOS EN BLANCO  A LOS LADOS Y ARRIBA)*/ 
+}
+.header {
+    background-color: black; /*color de background*/
+    color: white; /*color de fuente*/
+    padding: 0; /*tal vez se edite*/
+    margin: 0; /*Parte anaranjada ()vease en modelo de caja*/
+   /* box-sizing: border-box;  podemos modificar el comportamiento del modelo de caja para que nuestro elemento nunca supere el tamaño máximo que le hayamos definido en width y height. Esta es la opción recomendada para trabajar.*/
+    /* display: flex; para que los elementos hijos (el <figure> y el <nav>) se alineen en forma horizontal.*/
+}
+.header a {
+    color: white; /*color de fuente. ESTE FUE COLOCADO PARA SER MS ESPECIFICO CON  LOS CAMBIOS QUE SE QUIEREN HACER*/
+    text-decoration: none; /*decoracion del texto. EN ESTE CASO SE  LE ELIMINA LA DECORACION PREDETERMINADA*/
+}
+ol {
+    background-color: #C99036 ; /*#282E2E*/
+    margin: 0; /*deja el padding y margin en cero para evitar espacios en blanco en los bordes de la lista.*/
+    padding: 0;
+    list-style: none; /*quita los estilos que vienen por defecto (cómo la numeración y viñetas)*/
+    display: flex; /*se le agrega al padre y  le afecto a los hijos directos*/
+    justify-content: space-evenly;
+}
+li {
+    background-color: inherit;
+    width: 33.3%; /*Parte azul (ancho del contenido)vease en modelo de caja*/
+    height: 20px; /*Parte azul (alto del contenido)vease en modelo de caja*/ 
+    padding: 5px;
+    margin: 8px 0;
+    text-align: center; /*ALINIACION DEL TEXTO*/
+    /*flex-shrink: 1; LE ASIGNA LA CAPACIDAD DE ENCOGIMIENTO DE MI ELEMENTO HIJO  ENTRE 0 Y 1 DE ENCOGIMIENTO */
+    border-right: 1px solid yellow ;
+}
+.hero{ 
+    /*poner una imagen contrancision que cambie ademas de la imagen la descripcio de la imagen*/
+     /*background-size: 500px 300px; Tamaño del fondo o background(PERO ESTE NO ES UN FONDO)*/ 
+    margin: 40px;/*margen(ancho y largo)*/
+}
+.hero img {
+    width: 1200px;
+    height: 500px;
+    object-fit: fill; /*La object-fitpropiedad CSS se usa para especificar cómo se debe cambiar el tamaño de un <img> o <video> para que se ajuste a su contenedor.*/
+    display: block;
+    margin: 0 auto;
+}
+.hero-text{
+    width: 1200px;
+    margin:0 auto;
+    display: block;
+    font-size: 35px;   /*tamano de la letra*/ 
+    font-weight: 400;  /*grosor de la letra*/
+    line-height: 1.5;  /*separacion entre las palabras*/
+    /* letter-spacing:-.4;  separacion entre letras*/
+    color: #9A847F;    /*color de fuente*/
+    /* text-transform: uppercase;   En este caso transforma todo el texto en mayusculas*/
+}
+.services-mainTitle {
+    color: #75541F;    /*color de fuente*/
+    text-align: center; /*ALINIACION DEL TEXTO*/
+    font-size: 30px;   /*tamano de la letra*/ 
+    margin: 0 40px; /*PARA QUE SE ALININIE CON LOS OTROS MARGENES*/
+    margin-top: 70px;
+  /*  margin-left: 60px; PARA QUE SE ALININIE CON LOS OTROS MARGENES (REESCRIBE AL PRIMER MARGEN)*/
+    padding:  0 20px;
+}
+.services {
+    margin: 40px;/*margen(ancho y largo)*/  
+    display: flex; /*flex (SON FLEXIBLES)*/
+    justify-content: space-evenly;
+}
+.services-1conteiner {
+    background-color: #FFFFE0;
+   /* border: 6px outset #C99036; border: tamaño tipo estilo; "EDITAR"*/
+    /*color para el borde #FFFFF0 estili: outset*/
+    border: 5px solid #C99036;
+    border-radius: 5px; /*que tan curveadas son los vertices del borde*/
+    margin: 0; /*Parte anaranjada (TOP RIGHT BOTTOM LEFT)vease en modelo de caja (LE QUITE EL MARGEN PARA QUE NO INTERFIERA EN ALGUNOS CAMBIOS)*/ 
+    padding: 10px; /*Parte VERRDE (TOP RIGHT BOTTOM LEFT)vease en modelo de caja (ENTRE EL BORDE Y EL COTEIDO QUE ESTA DENTRO DEL BORDE)*/ 
+    display: flex; /*flex (SON FLEXIBLES)*/
+   /* align-items: center; PARA ALINEAR LOS ELEMENTOS (EN ESTE CASO AL CENTRO)*/
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+} 
+.services-details {
+    text-align: center; /*ALINIACION DEL TEXTO*/
+    width: 300px; /*Parte azul (ancho del contenido)vease en modelo de caja*/
+    height: auto; /*Parte azul (alto del contenido)vease en modelo de caja*/  
+    margin: 0 auto; /*Parte anaranjada (TOP RIGHT BOTTOM LEFT)vease en modelo de caja (LE QUITE EL MARGEN PARA QUE EL HEADER NO INTERFIERA EN ALGUNOS CAMBIOS)*/ 
+    padding: 10px; /*Parte VERRDE (TOP RIGHT BOTTOM LEFT)vease en modelo de caja (ENTRE EL BORDE Y EL COTEIDO QUE ESTA DENTRO DEL BORDE)*/ 
+}
+.services-imageContainer {
+    width: 200px; /*Parte azul (ancho del contenido)vease en modelo de caja*/
+    height: auto; /*Parte azul (alto del contenido)vease en modelo de caja*/
+    margin: 0 auto; /*Parte anaranjada (TOP RIGHT BOTTOM LEFT)vease en modelo de caja (LE QUITE EL MARGEN PARA QUE EL HEADER NO INTERFIERA EN ALGUNOS CAMBIOS)*/ 
+    padding: 15px; /*Parte VERRDE (TOP RIGHT BOTTOM LEFT)vease en modelo de caja (ENTRE EL BORDE Y EL COTEIDO QUE ESTA DENTRO DEL BORDE)*/ 
+}
+.services-image {
+    border-radius: 50%;
+}
+.products-title {
+    color: #C99036;    /*color de fuente*/
+    text-align: center; /*ALINIACION DEL TEXTO*/
+    font-size: 30px;   /*tamano de la letra*/ 
+    margin: 0 40px; /*PARA QUE SE ALININIE CON LOS OTROS MARGENES*/
+    margin-top: 70px;
+  /*  margin-left: 60px; PARA QUE SE ALININIE CON LOS OTROS MARGENES (REESCRIBE AL PRIMER MARGEN)*/
+    padding:  0 20px;
+}
+.products {
+    margin: 30px;/*margen(ancho y largo)*/  
+    display: flex; /*flex (SON FLEXIBLES)*/
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.products-url {
+    border: 2px solid  #C99036;
+    margin: 10px; /*Parte anaranjada (TOP RIGHT BOTTOM LEFT)vease en modelo de caja (LE QUITE EL MARGEN PARA QUE NO INTERFIERA EN ALGUNOS CAMBIOS)*/ 
+   margin-bottom: 30px;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px; /*que tan curveadas son los vertices del borde*/
+    overflow: hidden; /**/
+    flex-shrink: 0;
+    
+    padding: 0; /*Parte VERRDE (TOP RIGHT BOTTOM LEFT)vease en modelo de caja (ENTRE EL BORDE Y EL COTEIDO QUE ESTA DENTRO DEL BORDE)*/ 
+    display: flex; /*flex (SON FLEXIBLES)*/
+   /* align-items: center; PARA ALINEAR LOS ELEMENTOS (EN ESTE CASO AL CENTRO)*/
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
+    background-color: lemonchiffon;
+}
+.products-imageContainer {
+    padding: 0;
+    width: 500px;
+    height: 450px;
+    position: relative;
+    bottom: 3%;
+    /*float: left;  La float propiedad especifica cómo debe flotar un elemento. (derecha o izquierda)*/
+   /* overflow: hidden; Especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.*/
+    /*position: relative; specifica cómo un elemento es posicionado en el documento. Las propiedades top, right, bottom, y left determinan la ubicación final de los elementos posicionados.*/
+   /* text-align: center;*/
+    /*cursor: default;Tipo de figurita para el marcador*/
+}
+/*.products-imageContainer .products-details{
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+	top: auto;
+	bottom: 0;
+	padding: 1em;
+	height: 4.75em;
+	background: #79FAC4;
+	color: #3c4a50;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+	visibility: hidden;
+}*/
+.products-image {
+    width: 500px;
+    height: 450px;
+    object-fit: cover;
+    padding: 0;
+   /* display: block;
+    position: relative;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;*/
+}
+.products-details {
+    margin: 20px 40px;
+    margin-top: -60px;
+    background-color: #C99062; 
+    position: relative;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 3%;
+    font-size: 15px;
+}
+.contact{
+   background-color: #212123; 
+   color: #FFF;
+   height: 150px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+.social {
+    margin-right: 300px;
+}
+.social-link {
+    display: inline-block;
+   width: 70px;
+   height: 70px; 
+   margin: 0 10px;
+   background-size: 70px;
+}
+.social-link.whatsapp {
+    background-image: url('../imgs/whatsapp.svg');
+}
+.social-link.facebook {
+    background-image: url('../imgs/facebook.svg');
+}
+.social-link.instagram {
+    background-image: url('../imgs/instagram.svg');
+}
+.form-email{
+    margin: auto 280px;
+}
+.flex {
+    display: flex;
+}
+.form-email input {
+    width: 170px;
+    height: 15px;
+    text-align: center;
+    border-color: #C69E3C;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../imgs/email.svg');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+   
+}
+.form-email button {
+    margin: auto 20px;
+    margin-top: 3px;
+    background:transparent;
+    color:white;
+    padding: 10px 0;
+    border: 2px solid #C69E3C;
+    border-radius: 5px;
+    width: 70px;
+    height: 35px;
+}
+.footer {
+    background-color: #C69E3C;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px;
+    
+}
+.footer img {
+    vertical-align: middle;
+}
+.footer a {
+    color: white;
+}
+.footer-text {
+    margin-right: 100px;
+}
+/* .cotainer {
+    border: 5px solid red;  
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+} */

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>   <!--no tiene un display tan visual-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseños Emperador</title>          <!--se nota en el tap-->
+    <link rel="icon" type="image/png" href="imgs\crown.png" />    <!--icono en el tap/ favicon-->
+     <!-- Para link, en la cabecera head del documento:
+
+rel: indica la relación del recurso con el contenido.
+type: indica el tipo de recurso / formato.
+href: indica la ubicación (url) del recurso enlazado.
+Para meta, también en la cabecera head del documento:
+
+charset: indica la tabla de caracteres (utf-8 para caracteres latinos) usada en el documento.
+Para a:
+
+href: la ubicación o ruta a la que enlaza esta etiqueta de ancla. En el caso de querer enlazar a elementos que se encuentran dentro del mismo documento, este atributo debe indicar el valor del atributo ““id”” de ese elemento destino del enlace. -->
+    
+
+
+    <!--<link rel="icon" type="2imagen/png" href="Documents\pg_web\iconos e imagenes" />
+
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet"> -->
+
+
+
+<!-- <style>
+     header {
+       background: greenyellow;   <-- forma de agregar estilos
+     }
+</style> -->
+
+<link rel = "preconnect" href = "https://fonts.gstatic.com">
+<link href = "https://fonts.googleapis.com/css2? family = Space + Grotesk: wght @ 300; 500; 700 & display = swap "rel =" hoja de estilo ">
+<link rel="stylesheet" href="css/estilos.css">       <!--Es una forma de agregar estilos-->
+
+</head>    
+<body>
+    <header class="header"> 
+     <figure class="logoContainer">     <!-- *figure: le da un contexto semántico a las imágenes.-->
+        <img class="header-logoContainer" src="imgs/emperadorlogo.jpg"/>   
+     </figure>  
+          <!-- Para img:  
+          src: específica la ruta de la imagen que será mostrada a través de esta etiqueta. La ruta puede ser absoluta (cunado especifica una dirección exacta, incluyendo el prefijo http(s) ) o relativa (cuando la referencia a la ubicación de la imagen parte de la ubicación del archivo actual).
+            alt: indica un texto alternativo que será mostrado en lugar de la imagen cuando ésta no pueda ser mostrada.
+            width: ancho de la imagen en pixeles.
+            height: alto de la imagen en pixeles. -->
+        
+        <!--<h1>Diseños Emperador</h1>-->
+    <nav class="menu">  <!-- para el menu de navegacion -->
+    <ol>   <!-- listas ordenadas   ul listas desordenadas-->
+        <li>
+         <a class="link" href="#servicios">Servicios</a>    <!-- a corresponde a un ancla o enlace a una url interna o externa del documento.-->
+        </li>
+        <li>
+         <a class="link" href="#productos">Productos</a>
+        </li>
+        <li>
+         <a class="link" href="#contactanos">Contactanos</a>
+       </li>
+      </ol>
+     </nav>
+    </header>   <!-- cabezera del documento -->
+    <section class="hero">   <!-- divicion o seccion -->
+        <!-- <div class="container"> -->
+            <img class="hero-image" src="imgs/hero.jpg"/>
+            <p class="hero-text">    <!-- <br> salto de linea-->          <!-- strong vuelve las letras negritas-->
+                <En esta pagina podras encontrar muchos tipos de prendas. Las cuales puedes obtener personalizadas y asi lo deseas. <br> Tambien hay servicio de composturas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            </p>      
+        <!-- </div> -->
+    </section> 
+    <!-- <div class="container"> -->
+        <h2  id="servicios" class="services-mainTitle">
+            <b>Servicios</b>
+        </h2>
+    <!-- </div> -->
+    <section id="servicios" class="services">   
+        <!-- <div class="container"> -->
+            <div class="services-1conteiner">
+                <div class="services-details">
+                    <h3 class="services-title">
+                        <b>Servicio de confeccion de prendas:</b> 
+                    </h3>
+                    <p class="services-text">Si deseas podemos realizarte la prenda o produccto que desees siempre y cuando nos proporciones las medidas y o tallas, ademas de el 50% del costo del producto o prenda.</p>
+                </div> 
+                <figure class="services-imageContainer">
+                    <img class="services-image" src="imgs/confeccion.jpg" width="200" height="200" />
+                </figure>
+            </div> 
+            
+            <div class="services-1conteiner">
+                <div class="services-details">
+                    <h3 class="services-title"> 
+                        <b>Servicio de compustura:</b> 
+                    </h3>
+                    <p class="services-text">Este es un servicio que necesita mas especificaciones o una prenda adicional o producto para poder guiarnos acerca del tipo de resultado que quieres.</p>
+                </div> 
+                <figure class="services-imageContainer">
+                    <img class="services-image" src="imgs/compostura.jpg" width="200" height="200"
+                    />
+                </figure>
+            </div> 
+        <!-- </div>    -->
+    </section>
+    <!-- <section>
+        <h3>Portafolio</h3>  
+        <article>   <!- puede ser la referencia de un proyecto (link)* ->
+            <h3>Nombre del articulo</h3>
+        <p><small><strong>Fecha:</strong><strong> 28/08/20</strong></p>
+            <p></p>
+        </article>
+    <section/> -->
+<!-- <div class="container"> -->
+    <h2 class="products-title">Productos</h2>
+<!-- </div> -->
+<section id="productos" class="products">
+    <!-- <div class="container"> -->
+        <article class="products-url">  
+            <figure class="products-imageContainer">
+                <img class="products-image" src="imgs/pantalon.jpg" width="150"height="200"/>
+            </figure>
+            <div class="products-details">
+                <h3 class="products-imageTextTitle">Nombre de la prenda.</h3>
+                <p class="products-imageText">Informacion de la categoria.</p>
+                <a class="products-imageLink"> a Enlace</a>
+            </div>
+        </article>
+        <article class="products-url">  
+            <figure class="products-imageContainer">
+                <img class="products-image" src="imgs/sueter.webp" width="150"height="200"/>
+            </figure>
+            <div class="products-details">
+                <h3 class="products-imageTextTitle">Nombre de la prenda.</h3>
+                <p class="products-imageText">Informacion de la categoria.</p>
+                <a class="products-imageLink"> a Enlace</a>
+            </div>
+        </article>
+        <article class="products-url">  
+            <figure class="products-imageContainer">
+                <img class="products-image" src="imgs/uniforme.jpg" width="150" height="200"/>
+            </figure>
+            <div class="products-details">
+                <h3 class="products-imageTextTitle">Nombre de la prenda.</h3>
+                <p class="products-imageText">Informacion de la categoria.</p>
+                <a class="products-imageLink"> a Enlace</a>
+            </div>
+        </article>
+        <article class="products-url">  
+            <figure class="products-imageContainer">
+                <img class="products-image" src="imgs/camisa.webp" width="150"height="200"/>
+            </figure>
+            <div class="products-details">
+                <h3 class="products-imageTextTitle">Nombre de la prenda.</h3>
+                <p class="products-imageText">Informacion de la categoria.</p>
+                <a class="products-imageLink"> a Enlace</a>
+            </div>
+        </article>
+        <article class="products-url">  
+            <figure class="products-imageContainer">
+                <img class="products-image" src="imgs/pijama.jpg" width="150"height="200"/>
+            </figure>
+            <div class="products-details">
+                <h3 class="products-imageTextTitle">Nombre de la prenda.</h3>
+                <p class="products-imageText">Informacion de la categoria.</p>
+                <a class="products-imageLink"> a Enlace</a>
+            </div>
+        </article>
+        <article class="products-url">  
+            <figure class="products-imageContainer">
+                <img class="products-image" src="imgs/ropadeportiva.webp" width="150"height="200"/>
+            </figure>
+            <div class="products-details">
+                <h3 class="products-imageTextTitle">Nombre de la prenda.</h3>
+                <p class="products-imageText">Informacion de la categoria.</p>
+                <a class="products-imageLink"> a Enlace</a>
+            </div>
+        </article>
+        <article class="products-url">  
+            <figure class="products-imageContainer">
+                <img class="products-image" src="imgs/sudadera.jpg" width="150"height="200"/>
+            </figure>
+            <div class="products-details">
+                <h3 class="products-imageTextTitle">Nombre de la prenda.</h3>
+                <p class="products-imageText">Informacion de la categoria.</p>
+                <a class="products-imageLink"> a Enlace</a>
+            </div>
+        </article>
+        <article class="products-url">  
+            <figure class="products-imageContainer">
+                <img class="products-image" src="imgs/chamarra.jpg" width="150"height="200"/>
+            </figure>
+            <div class="products-details">
+                <h3 class="products-imageTextTitle">Nombre de la prenda.</h3>
+                <p class="products-imageText">Informacion de la categoria.</p>
+                <a class="products-imageLink"> a Enlace</a>
+            </div>
+        </article>
+        <article class="products-url">  
+            <figure class="products-imageContainer">
+                <img class="products-image" src="imgs/ropainteriorparamujer.jpg" width="150"height="200"/>
+            </figure>
+            <div class="products-details">
+                <h3 class="products-imageTextTitle">Nombre de la prenda.</h3>
+                <p class="products-imageText">Informacion de la categoria.</p>
+                <a class="products-imageLink"> a Enlace</a>
+            </div>
+        </article>
+        <article class="products-url">  
+            <figure class="products-imageContainer">
+                <img class="products-image" src="imgs/ropainteriordehombre.jpg" width="150"height="200"/>
+            </figure>
+            <div class="products-details">
+                <h3 class="products-imageTextTitle">Nombre de la prenda.</h3>
+                <p class="products-imageText">Informacion de la categoria.</p>
+                <a class="products-imageLink"> a Enlace</a>
+            </div>
+        </article>
+    <!-- </div> -->
+</section>
+    <section id="contactanos" class="contact" >
+      <!-- <div class="container">     -->
+          <form action="/suscripcion/" class="form-email">
+            <h3>¿Deseas algun producto o servicio?</h3>
+            <div class="flex">
+                <input type="text"  placeholder="Deja tu email" id="email">
+                <button>Enviar</button>
+            </div>
+            </form>   
+        <div class="social">
+            <a href="https://whatsapp.com/diseñosemperador" class="social-link whatsapp"></a>
+            <a href="https://facebook.com/diseñosemperador" class="social-link facebook"></a>
+            <a href="https://instagram.com/diseñosemperador" class="social-link instagram"></a>
+        </div>
+      <!-- </div> -->
+  </section>
+    <footer class="footer">
+     <!-- <div class="container"> -->
+         <div class="footer-text">
+             <p>Mi primera pagina web. Basada en el curso de <img src="imgs/platzy-logo.jpg" width="80px"  alt="platzi" </p>   
+        </div>
+         <div class="footer-text"> 
+            <p>Diseñado con <\3 por <a href="https://github.com/Yeli-bug">@Yeli-bug</a> </p>
+         </div>
+            <!--<a class='bx bxl-whatsapp'></a>
+            <a class='bx bxl-facebook' ></a> 
+                La <i>etiqueta define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior se muestra normalmente en cursiva.
+                <em> (texto enfatizado)
+                    <strong> (texto importante)
+                        <marca> (texto marcado / resaltado)
+                            <cite> (el título de una obra)
+                                <dfn> (un término de definición) -->  
+      <!-- </div>   -->
+</footer>    <!-- pie de pagina es la seccion de pie de pagina -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
